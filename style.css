@@ -5,12 +5,20 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   body {
     @apply font-body;
   }
+
   h1,
   h2,
   h3 {
     @apply font-display text-gray-800 font-medium;
+  }
+  .container {
+    @apply px-6 mx-auto mt-16 max-w-7xl lg:px-8 lg:mt-32;
   }
 }
